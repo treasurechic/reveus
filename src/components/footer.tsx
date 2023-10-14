@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer } from "flowbite-react";
-import { Icon } from '@iconify/react';
+import { Icons } from "./icons";
 
 export const DefaultFooter = () => {
   return (
@@ -14,16 +14,16 @@ export const DefaultFooter = () => {
       />
        <Footer.LinkGroup>
         <Footer.Link href="#" className="text-white">
-        <Icon icon="fa6-brands:x-twitter" fontSize={'20'}/>
+        <Icons icon="fa6-brands:x-twitter" fontSize={'20'}/>
         </Footer.Link>
         <Footer.Link href="#" className="text-white">
-        <Icon icon="teenyicons:discord-outline" fontSize={'20'}/>
+        <Icons icon="teenyicons:discord-outline" fontSize={'20'}/>
         </Footer.Link>
         <Footer.Link href="#" className="text-white">
-        <Icon icon="ph:linkedin-logo-bold" fontSize={'20'}/>
+        <Icons icon="ph:linkedin-logo-bold" fontSize={'20'}/>
         </Footer.Link>
         <Footer.Link href="#" className="text-white">
-        <Icon icon="basil:youtube-outline" fontSize={'25'}/>                                
+        <Icons icon="basil:youtube-outline" fontSize={'25'}/>                                
         </Footer.Link>
       </Footer.LinkGroup>
       <Footer.LinkGroup>
