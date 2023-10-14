@@ -1,0 +1,35 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+   // Primary colors
+   --pink-400: #93254b;
+
+   // Secondary Colours
+   --black-200: #06090d;
+   --black-300: #0f1b26;
+
+   // Neutrals & Shades
+   --grey-100: #ececec;
+   --grey-200: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    // Primary colors
+    --pink-400: #93254b;
+
+    // Secondary Colours
+    --black-200: #06090d;
+    --black-300: #0f1b26;
+
+    // Neutrals & Shades
+    --grey-100: #ececec;
+    --grey-200: rgba(255, 255, 255, 0.7);
+  }
+}

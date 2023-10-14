@@ -1,0 +1,23 @@
+@import "./abstract/variables";
+@import "./base/typography";
+@import "./base/buttons";
+@import "./abstract/mixin.scss";
+@import "./toastify.scss";
+
+.react-skeleton-load {
+  width: 100% !important;
+}
+
+.navbar-wrapper {
+  ul {
+    align-items: center;
+    a {
+      color: white;
+      transition: all ease 0.3s;
+      &:hover,
+      &:active {
+        color: var(--pink-400);
+      }
+    }
+  }
+}
