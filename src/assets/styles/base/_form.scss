@@ -1,0 +1,23 @@
+@import "../abstract/variables";
+
+.form-control {
+  background: var(--black-300);
+  border: 0.1rem solid rgba($color: var(--pink-400), $alpha: 0.5);
+  border-radius: 0.8rem;
+  min-height: 4.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border: 0.1rem solid var(--pink-400);
+  }
+
+  &::placeholder {
+    color: var(--foreground-rgb);
+    opacity: 0.7;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.4rem;
+  }
+}

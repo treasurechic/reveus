@@ -1,7 +1,7 @@
 import { Field, Form, Formik, FormikValues } from "formik";
 import * as yup from "yup";
 import CustomCheckbox from "../forms/checkbox";
-import Button from "../forms/Button";
+import Button from "../forms/button";
 import { OnboardingPhases, User } from "@/lib/interfaces";
 
 const allTypes = [
@@ -49,7 +49,8 @@ export const FieldOfExpertise = ({
     if (formValues.productTypes.length > 0) {
       console.log(formValues);
       if (user.type === "gr") {
-        updateStep("about");
+        //       updateStep('verification')
+                                        
       } else {
         //       updateStep('verification')
       }

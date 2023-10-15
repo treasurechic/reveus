@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   min-height: 3.5rem;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -50,10 +51,10 @@
   &:hover,
   &:focus {
     background-color: var(--pink-400);
-    color: white;
+    color: white !important;
   }
   &:disabled {
-    color: white;
+    color: var(--pink-400);
     opacity: 0.8;
   }
 }
