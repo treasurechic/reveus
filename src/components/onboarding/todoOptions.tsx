@@ -1,12 +1,24 @@
+import { OnboardingPhases, User } from "@/lib/interfaces";
 import React from "react";
-import { Icons } from "../icons";
 
-export const TodoOptions = () => {
+export const TodoOptions = ({
+  updateStep,
+  setUser,
+}: {
+  updateStep: (value: OnboardingPhases) => void;
+  setUser: (value: User) => void;
+}) => {
   return (
     <div className="lg:w-1/2 md:w-2/3 mx-auto">
-      <h3 className="text-title text-center mb-16">What do you wanna do?</h3>
+      <h3 className="title text-center mb-16">What do you wanna do?</h3>
       <div>
-        <button className="btn btn-md btn-secondary w-[25rem] mx-auto mb-8 text-xl">
+        <button
+          className="btn btn-md btn-secondary w-[25rem] mx-auto mb-8 text-xl"
+          onClick={() => {
+            updateStep("FOE");
+            setUser({ type: "hr" });
+          }}
+        >
           <span className="mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +38,13 @@ export const TodoOptions = () => {
           </span>
           Help Reviewing
         </button>
-        <button className="btn btn-md btn-secondary w-[25rem] mx-auto mb-8 text-xl">
+        <button
+          className="btn btn-md btn-secondary w-[25rem] mx-auto mb-8 text-xl"
+          onClick={() => {
+            updateStep("about");
+            setUser({ type: "gr" });
+          }}
+        >
           <span className="mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
