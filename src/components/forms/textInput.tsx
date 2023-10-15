@@ -25,7 +25,7 @@ const TextInput = ({
       />
 
       {hasError && (
-        <div className="text-danger text-xs">{errors[field.name]}</div>
+        <div className="text-danger text-xs mt-2">{errors[field.name]}</div>
       )}
     </Fragment>
   );
