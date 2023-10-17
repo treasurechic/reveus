@@ -49,8 +49,7 @@ export const FieldOfExpertise = ({
     if (formValues.productTypes.length > 0) {
       console.log(formValues);
       if (user.type === "gr") {
-        //       updateStep('verification')
-                                        
+        updateStep("options");
       } else {
         //       updateStep('verification')
       }
