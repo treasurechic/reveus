@@ -3,6 +3,7 @@
 .title {
   font-size: 4rem;
   font-weight: 600;
+  line-height: 1;
 }
 label{
   display: block;
@@ -33,4 +34,8 @@ label{
 }
 .text-3xl {
   font-size: 4rem !important;
+}
+
+.text-4xl {
+  font-size: 6rem !important;
 }

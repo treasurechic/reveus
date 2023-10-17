@@ -2,12 +2,20 @@ import { ReactNode } from "react";
 import { DefaultNavbar } from "./navbar";
 import { DefaultFooter } from "./footer";
 
-export const MainLayout = ({ children }: { children: ReactNode }) => {
+export const MainLayout = ({
+  children,
+  showNav = true,
+}: {
+  children: ReactNode;
+  showNav?: boolean;
+}) => {
   return (
-    <main className="flex min-h-screen flex-col px-24">
-      <DefaultNavbar />
-      <div className="my-10">{children}</div>
-      <DefaultFooter />
-    </main>
+    <>
+      {showNav && <DefaultNavbar />}
+      <main className="flex min-h-screen flex-col">
+        <div>{children}</div>
+        <DefaultFooter />
+      </main>
+    </>
   );
 };

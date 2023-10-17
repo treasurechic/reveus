@@ -7,10 +7,11 @@ export const metadata: Metadata = {
 };
 
 const OnboardPage = () => {
-
   return (
     <MainLayout>
-      <Onboarding />
+      <div className="my-10 px-24">
+        <Onboarding />
+      </div>
     </MainLayout>
   );
 };
