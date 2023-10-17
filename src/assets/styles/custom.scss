@@ -5,6 +5,53 @@
 @import "./abstract/mixin.scss";
 @import "./toastify.scss";
 
+// In this project, 1rem = 10px
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  @media (max-width: 900px) {
+    font-size: 59.5%;
+  }
+  @media (max-width: 700px) {
+    font-size: 55.5%;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--black-300);
+  border-radius: 5rem;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  color-scheme: dark;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: rgb(var(--foreground-rgb));
+  font-size: 1.4rem;
+  background: var(--black-200);
+}
+
+.container {
+  margin-inline: auto;
+}
+
 .react-skeleton-load {
   width: 100% !important;
 }
@@ -20,5 +67,42 @@
         color: var(--pink-400);
       }
     }
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("/terazzo.png") center center no-repeat,
+    radial-gradient(
+      39% 46% at 50% 100%,
+      rgba($color: #ff8344, $alpha: 0.45),
+      var(--black-300)
+    );
+  &-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    min-height: calc(100vh - 12rem);
+  }
+}
+
+#how-it-works {
+  .steps-wrapper {
+    background: linear-gradient(
+      276deg,
+      rgba(96, 186, 255, 0.11) 3.68%,
+      rgba(96, 186, 255, 0) 99.81%
+    );
+  }
+}
+
+.accordion-wrapper {
+  button,
+  .first\:rounded-t-lg:first-child {
+    border: solid 0.1rem var(--pink-400) !important;
+    border-radius: 0.8rem;
   }
 }

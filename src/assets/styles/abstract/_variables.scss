@@ -3,16 +3,22 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-   // Primary colors
-   --pink-400: #93254b;
+  // Primary colors
+  --pink-400: #93254b;
 
-   // Secondary Colours
-   --black-200: #06090d;
-   --black-300: #0f1b26;
+  // Secondary Colours
+  --black-200: #06090d;
+  --black-300: #0f1b26;
+  --black-400: #09182c;
 
-   // Neutrals & Shades
-   --grey-100: #ececec;
-   --grey-200: rgba(255, 255, 255, 0.7);
+  --orange-400: #ff8344;
+
+  --blue-300: #5a7bbb;
+
+  // Neutrals & Shades
+  --gray-100: #ececec;
+  --gray-200: rgba(255, 255, 255, 0.1);
+  --gray-300: rgba(255, 255, 255, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,9 +33,15 @@
     // Secondary Colours
     --black-200: #06090d;
     --black-300: #0f1b26;
+    --black-400: #09182c;
+
+    --orange-400: #ff8344;
+
+    --blue-300: #5a7bbb;
 
     // Neutrals & Shades
-    --grey-100: #ececec;
-    --grey-200: rgba(255, 255, 255, 0.7);
+    --gray-100: #ececec;
+    --gray-200: rgba(255, 255, 255, 0.1);
+    --gray-300: rgba(255, 255, 255, 0.7);
   }
 }

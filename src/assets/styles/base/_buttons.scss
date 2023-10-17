@@ -22,6 +22,22 @@
   &:focus,
   &:disabled {
     color: white;
+    filter: brightness(0.8);
+  }
+  &:disabled {
+    opacity: 0.8;
+  }
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--pink-400);
+  border: solid 0.3rem var(--pink-400);
+  transition: all ease 0.3s;
+  color: white;
+  &:hover,
+  &:focus {
+    background-color: var(--pink-400);
     // background-color: darken($color: var(--pink-400), $amount: 15);
   }
   &:disabled {
