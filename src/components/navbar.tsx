@@ -22,7 +22,7 @@ export const DefaultNavbar = ({ className }: { className?: string }) => {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link className="text-xs" href="/" active>
+        <Navbar.Link className="text-xs" href="/marketplace" active>
           MARKETPLACE
         </Navbar.Link>
         <Navbar.Link className="text-xs" as={Link} href="/#how-it-works">

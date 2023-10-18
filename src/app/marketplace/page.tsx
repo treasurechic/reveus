@@ -1,19 +1,22 @@
 import { MainLayout } from "@/components/mainLayout";
-import { Onboarding } from "@/components/onboarding";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Reveus - Onboarding",
+  title: "Reveus - Marketplace",
 };
 
-const OnboardPage = () => {
+const Marketplace = () => {
   return (
     <MainLayout>
       <div className="my-10 container px-4">
-        <Onboarding />
+      <h3 className="title text-center mb-16">Marketplace</h3>
+      <div>
+
+      </div>
       </div>
     </MainLayout>
   );
 };
 
-export default OnboardPage;
+export default Marketplace;

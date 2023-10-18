@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const Login = () => {
   return (
     <MainLayout>
-     <div className="my-10 px-24">
+     <div className="my-10 container px-4">
      <LoginForm />
      </div>
     </MainLayout>
