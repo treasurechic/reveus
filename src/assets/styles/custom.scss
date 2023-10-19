@@ -106,3 +106,9 @@ body {
     border-radius: 0.8rem;
   }
 }
+
+.progress-bar {
+  .rounded-full {
+    background-color: var(--pink-400);
+  }
+}
