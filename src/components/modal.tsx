@@ -18,7 +18,6 @@ export default function DefaultModal({
 }) {
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Toggle modal</Button>
       <Modal
         show={openModal}
         onClose={() => setOpenModal(false)}
