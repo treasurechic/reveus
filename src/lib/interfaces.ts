@@ -1,5 +1,6 @@
 export interface User {
-  type: "hr" | "gr"; // help review or get reviewed
+  type: UserTypes; // help review or get reviewed
 }
 
-export type OnboardingPhases = "options" | "FOE" | "about"
+export type UserTypes = "hr" | "gr";
+export type OnboardingPhases = "options" | "FOE" | "about";

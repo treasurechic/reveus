@@ -35,6 +35,7 @@ const config: Config = {
 
         blue: {
           300: "#5A7BBB",
+          400: "#6679E7",
         },
 
         gray: {
