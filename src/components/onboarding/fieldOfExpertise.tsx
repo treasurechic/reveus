@@ -3,6 +3,7 @@ import * as yup from "yup";
 import CustomCheckbox from "../forms/checkbox";
 import Button from "../forms/button";
 import { OnboardingPhases, User } from "@/lib/interfaces";
+import { useRouter } from "next/navigation";
 
 const allTypes = [
   {
@@ -34,6 +35,8 @@ export const FieldOfExpertise = ({
   updateStep: (value: OnboardingPhases) => void;
   user: User;
 }) => {
+  const router = useRouter();
+
   const initialValues: { productTypes: string[] } = {
     productTypes: [],
   };
@@ -51,7 +54,8 @@ export const FieldOfExpertise = ({
       if (user.type === "gr") {
         updateStep("options");
       } else {
-        //       updateStep('verification')
+        //Verify and route to projects
+        router.push("/projects");
       }
     }
   };

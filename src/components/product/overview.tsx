@@ -12,7 +12,7 @@ export const ProductOverview = () => {
           Reveus is a review-to-earn platform and a thriving community of
           specialized web3 reviewers.
         </p>
-        <h1 className="my-5 h-[0.2rem] bg-pink-400"></h1>
+        <hr className="my-5 h-[0.2rem] bg-pink-400"></hr>
         <p className="text-xxl mb-32">
           We connect you with cutting-edge projects, tokens, DAOs, and trading
           platforms. Our mission is to empower you with knowledge and rewards

@@ -112,3 +112,14 @@ body {
     background-color: var(--pink-400);
   }
 }
+
+.modal-wrapper {
+  .bg-white {
+    background-color: var(--black-300);
+    min-height: 40rem;
+  }
+  .text-white,
+  & h3 {
+    color: white;
+  }
+}
