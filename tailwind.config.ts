@@ -23,6 +23,10 @@ const config: Config = {
           400: "#FF8344",
         },
 
+        yellow: {
+          400: "#F0B90B",
+        },
+
         black: {
           200: "#06090d",
           300: "#0f1b26",
