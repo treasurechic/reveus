@@ -32,9 +32,13 @@ export const ConnectWalletModal = ({
         setOpenModal={setOpenModal}
       >
         <div>
-          <Accordion alwaysOpen>
+          <Accordion
+            alwaysOpen
+            flush
+            arrowIcon={() => <Icons icon="pepicons-pop:angle-down-circle" className="text-gray-300" />}
+          >
             <Accordion.Panel>
-              <Accordion.Title className="bg-transparent hover:bg-tranparent shadow-none focus:shadow-none text-white mb-5">
+              <Accordion.Title className="bg-transparent text-white mb-5">
                 Choose Network
               </Accordion.Title>
               <Accordion.Content className="mb-10">
@@ -42,12 +46,12 @@ export const ConnectWalletModal = ({
                   <span className="bg-blue-400 px-4 py-3 rounded-[0.8rem]">
                     <Icons icon="logos:ethereum" className="text-xxl" />
                   </span>
-                 <span className="text-xl"> Ethereum Network</span>
+                  <span className="text-xl"> Ethereum Network</span>
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
-              <Accordion.Title className="bg-transparent hover:bg-tranparent shadow-none text-white mb-5">
+              <Accordion.Title className="bg-transparent text-white mb-5">
                 Select Wallet
               </Accordion.Title>
               <Accordion.Content>
