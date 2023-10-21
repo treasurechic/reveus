@@ -17,7 +17,7 @@ import {
   polygon,
   goerli,
   mainnet,
-  sepolia,
+  sepolia,scroll
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
@@ -30,7 +30,7 @@ export const MainLayout = ({
   showNav?: boolean;
 }) => {
   const { chains, publicClient } = configureChains(
-    [mainnet, optimism, arbitrum, polygon, goerli, sepolia],
+    [mainnet, optimism, arbitrum, polygon, goerli, sepolia, scroll],
     [alchemyProvider({ apiKey: process.env.ALCHEMY_KEY! }), publicProvider()]
   );
 
