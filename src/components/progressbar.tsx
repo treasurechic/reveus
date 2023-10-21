@@ -1,3 +1,4 @@
+"use client";
 import { Progress } from "flowbite-react";
 
 export const DefaultProgress = ({ value }: { value: number }) => {

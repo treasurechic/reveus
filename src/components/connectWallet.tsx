@@ -14,15 +14,15 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 export const ConnectWalletModal = ({
   openModal,
   setOpenModal,
-  nextStep,
+//   nextStep,
 }: {
   openModal: boolean;
   setOpenModal: (str: boolean) => void;
-  nextStep: () => void;
+  nextStep?: () => void;
 }) => {
-  const connect = () => {
-    nextStep();
-  };
+//   const connect = () => {
+//     nextStep();
+//   };
 
   return (
     <>

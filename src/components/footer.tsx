@@ -1,3 +1,4 @@
+"use client";
 import { Footer } from "flowbite-react";
 import { Icons } from "./icons";
 
