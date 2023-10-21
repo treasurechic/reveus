@@ -1,4 +1,3 @@
-"use client";
 import { Fragment } from "react";
 import { FieldAttributes } from "formik";
 import { Checkbox, Label } from "flowbite-react";
@@ -28,9 +27,9 @@ const CustomCheckbox = ({
           onChange={field.onChange}
           onBlur={field.onBlur}
           className={`w-[1.6rem] h-[1.6rem] ${className}`}
-          
         />
-        <Label htmlFor={field.id}
+        <Label
+          htmlFor={field.id}
           className={`text-xl font-bold text-white ${labelClassname}`}
         >
           {label}

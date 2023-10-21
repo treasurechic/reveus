@@ -1,5 +1,3 @@
-"use client";
-
 import { Field, Form, Formik, FormikValues } from "formik";
 import * as yup from "yup";
 import Button from "./forms/button";
@@ -25,16 +23,24 @@ export const ReviewForm = () => {
   };
 
   const validationSchema = yup.object().shape({
-    qualityScale: yup.number().positive("Invalid").label("qualityScale").required(),
+    qualityScale: yup
+      .number()
+      .positive("Invalid")
+      .label("qualityScale")
+      .required(),
     qualityComment: yup.string().label("qualityComment").required(),
-    securityScale: yup.number().positive("Invalid").label("securityScale").required(),
+    securityScale: yup
+      .number()
+      .positive("Invalid")
+      .label("securityScale")
+      .required(),
     securityComment: yup.string().label("securityComment").required(),
     additionalComment: yup.string().label("additionalComment").optional(),
   });
 
   const submitForm = async (formValues: FormikValues) => {
     console.log(formValues);
-    router.push(`/success?view=${encodeURIComponent('submit-review')}`);
+    router.push(`/success?view=${encodeURIComponent("submit-review")}`);
   };
 
   return (

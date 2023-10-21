@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Button, Navbar } from "flowbite-react";
 import Link from "next/link";
@@ -34,7 +32,7 @@ export const DefaultNavbar = ({ className }: { className?: string }) => {
         <Navbar.Link className="text-xs" href="/#faq">
           FAQ
         </Navbar.Link>
-        <Navbar.Link href="/login">
+        <Navbar.Link href="/onboard">
           <Button className="btn btn-primary"> Join our Community</Button>
         </Navbar.Link>
       </Navbar.Collapse>

@@ -1,15 +1,15 @@
-"use client";
-import Image from "next/image";
-import { Icons } from "./icons";
 import DefaultModal from "./modal";
-import { Accordion } from "flowbite-react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import Image from "next/image";
+// import { Icons } from "./icons";
+// import { Accordion } from "flowbite-react";
 
-const wallets = [
-  { title: "Metamask", img: "/metamask.svg" },
-  { title: "Coinbase", img: "/coinbase.svg" },
-  { title: "Safepal", img: "/safepal.svg" },
-  { title: "Wallet Connect", img: "/walletconnect.svg" },
-];
+// const wallets = [
+//   { title: "Metamask", img: "/metamask.svg" },
+//   { title: "Coinbase", img: "/coinbase.svg" },
+//   { title: "Safepal", img: "/safepal.svg" },
+//   { title: "Wallet Connect", img: "/walletconnect.svg" },
+// ];
 
 export const ConnectWalletModal = ({
   openModal,
@@ -32,10 +32,19 @@ export const ConnectWalletModal = ({
         setOpenModal={setOpenModal}
       >
         <div>
-          <Accordion
+          <button className="btn btn-md btn-primary w-full">
+            <ConnectButton />
+          </button>
+
+          {/* <Accordion
             alwaysOpen
             flush
-            arrowIcon={() => <Icons icon="pepicons-pop:angle-down-circle" className="text-gray-300" />}
+            arrowIcon={() => (
+              <Icons
+                icon="pepicons-pop:angle-down-circle"
+                className="text-gray-300"
+              />
+            )}
           >
             <Accordion.Panel>
               <Accordion.Title className="bg-transparent text-white mb-5">
@@ -69,7 +78,7 @@ export const ConnectWalletModal = ({
                 </div>
               </Accordion.Content>
             </Accordion.Panel>
-          </Accordion>
+          </Accordion> */}
         </div>
       </DefaultModal>
     </>

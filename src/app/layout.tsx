@@ -1,6 +1,7 @@
 import "./globals.scss";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import "@rainbow-me/rainbowkit/styles.css";
 
 const plus_Jakarta_Sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 

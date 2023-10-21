@@ -1,5 +1,3 @@
-"use client";
-
 import { Accordion } from "flowbite-react";
 import { Icons } from "./icons";
 import Image from "next/image";
@@ -98,7 +96,13 @@ export const Social = ({
         {icon ? (
           <Icons icon={icon} className={`text-xxl mx-auto ${iconClassNames}`} />
         ) : img ? (
-          <Image alt={title} src={img} height={30} width={30} className="mx-auto"/>
+          <Image
+            alt={title}
+            src={img}
+            height={30}
+            width={30}
+            className="mx-auto"
+          />
         ) : null}
       </div>
       <p className="text-base font-medium mb-5">{title}</p>
