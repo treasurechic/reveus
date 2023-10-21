@@ -5,9 +5,20 @@ import { DefaultNavbar } from "./navbar";
 import { DefaultFooter } from "./footer";
 
 //Wagmi and rainbowkit
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  darkTheme,
+} from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { optimism, arbitrum, polygon, goerli, mainnet, sepolia } from "wagmi/chains";
+import {
+  optimism,
+  arbitrum,
+  polygon,
+  goerli,
+  mainnet,
+  sepolia,
+} from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -36,7 +47,7 @@ export const MainLayout = ({
   });
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={darkTheme()}>
         <>
           {showNav && <DefaultNavbar />}
           <main className="flex min-h-screen flex-col">
