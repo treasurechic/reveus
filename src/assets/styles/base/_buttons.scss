@@ -16,6 +16,7 @@
 
 .btn-primary {
   background-color: var(--pink-400);
+  border: solid 0.3rem var(--pink-400);
   color: white;
   transition: all ease 0.3s;
   &:hover,
@@ -40,8 +41,10 @@
     background-color: var(--pink-400);
     // background-color: darken($color: var(--pink-400), $amount: 15);
   }
-  &:disabled {
+  &:disabled,
+  & :hover {
     opacity: 0.8;
+    background-color: transparent;
   }
 }
 
@@ -69,7 +72,10 @@
     background-color: var(--pink-400);
     color: white !important;
   }
-  &:disabled {
+  &:disabled,
+  & :hover {
+    color: var(--pink-400);
+    background-color: white;
     color: var(--pink-400);
     opacity: 0.8;
   }

@@ -19,7 +19,7 @@ export const Onboarding = () => {
       {step === "options" ? (
         <TodoOptions updateStep={updateStep} setUser={setUser} />
       ) : step === "FOE" && user ? (
-        <FieldOfExpertise updateStep={updateStep} user={user} />
+        <FieldOfExpertise user={user} />
       ) : step === "about" ? (
         <AboutProject updateStep={updateStep} />
       ) : null}

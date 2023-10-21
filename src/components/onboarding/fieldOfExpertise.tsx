@@ -2,7 +2,7 @@ import { Field, Form, Formik, FormikValues } from "formik";
 import * as yup from "yup";
 import CustomCheckbox from "../forms/checkbox";
 import Button from "../forms/button";
-import { OnboardingPhases, User } from "@/lib/interfaces";
+import { User } from "@/lib/interfaces";
 import { useRouter } from "next/navigation";
 
 const allTypes = [
@@ -28,13 +28,7 @@ const allTypes = [
   },
 ];
 
-export const FieldOfExpertise = ({
-  updateStep,
-  user,
-}: {
-  updateStep: (value: OnboardingPhases) => void;
-  user: User;
-}) => {
+export const FieldOfExpertise = ({ user }: { user: User }) => {
   const router = useRouter();
 
   const initialValues: { productTypes: string[] } = {
@@ -52,10 +46,10 @@ export const FieldOfExpertise = ({
     if (formValues.productTypes.length > 0) {
       console.log(formValues);
       if (user.type === "gr") {
-        updateStep("options");
+        router.push(`/success?view=${encodeURIComponent("get-review")}`);
       } else {
         //Verify and route to projects
-        router.push("/projects");
+        router.push("/products");
       }
     }
   };
