@@ -16,13 +16,13 @@ export const TodoOptions = ({
   const connectWallet = (_type: UserTypes) => {
     setType(_type);
     if (_type === "gr") {
-      nextStep("gr");
+      nextStep();
     } else {
       setOpenModal(true);
     }
   };
-
-  const nextStep = (_type?: UserTypes) => {
+  
+  const nextStep = () => {
     if (type === "hr") {
       updateStep("FOE");
       setUser({ type: "hr" });
